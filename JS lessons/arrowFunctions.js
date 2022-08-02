@@ -1,0 +1,42 @@
+// Rewrite with arrow functions.
+
+// Replace Function Expressions with => 'arrow' functions in the code below.
+
+// Function expression.
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//     "Do you agree?",
+//     function () {
+//         alert("You agreed.");
+//     },
+//     function () {
+//         alert("You canceled the execution.");
+//     }
+// );
+
+// => 'arrow' function
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//     "Do you agree?",
+//     () => alert("You agreed."),
+//     () => alert("You canceled the execution.")
+// );
+
+// ? + =>
+
+// let ask = (question, yes, no) => (confirm(question) ? yes() : no());
+// ask(
+//     "Dou you agree?",
+//     () => alert("You agreed."),
+//     () => alert("You canceled the execution.")
+// );
